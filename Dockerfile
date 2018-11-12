@@ -13,5 +13,4 @@ RUN \
 COPY ./config.json .
 
 EXPOSE 8443
-USER node
 ENTRYPOINT ["/usr/bin/solid", "start"]
