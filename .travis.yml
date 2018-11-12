@@ -1,0 +1,12 @@
+sudo: required
+
+services:
+  - docker
+  - openssl
+
+script:
+  - make generate-cert
+  - make build
+  - make run
+  - docker ps -a
+  - make kill
