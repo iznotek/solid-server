@@ -2,6 +2,8 @@ repo=tekwrks
 name=solid-server
 version=1.0.0
 
+projectID=tekwrks
+
 .PHONY:build
 build:
 	docker image build \
@@ -45,3 +47,12 @@ kill:
 	docker kill $$( \
 	docker ps -aq \
 	--filter="name=${repo}-${name}-dev" ))
+
+.PHONY:push
+push:
+	docker tag \
+		${repo}/${name}:${version} \
+		gcr.io/${projectID}/${name}:${version}
+	docker push \
+		gcr.io/${projectID}/${name}:${version}
+

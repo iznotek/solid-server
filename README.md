@@ -28,6 +28,8 @@ docker container run \
   -t tekwrks/solid-server:latest
 ```
 
+Solid uses port 8443 by default. Access it at [https://localhost:8443](https://localhost:8443)
+
 Make sure you have created the ssl certificate, since solid-server needs an https connection to work.
 
 ## Building it yourself
@@ -42,9 +44,8 @@ make && make run
 ```
 (inspect the makefile for exact commands used for building)
 
-Solid uses port 8443 by default. Access it at [https://localhost:8443](https://localhost:8443)
-
 ## Configuration
 Default config is included in the image. ([```config.json```](https://github.com/tekwrks/solid-server/blob/master/config.json))
 
 You can use custom config by mounting it to ```/solid/config.json```.
+

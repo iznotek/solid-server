@@ -4,9 +4,12 @@ services:
   - docker
   - openssl
 
-script:
+install:
   - make generate-cert
   - make build
+
+script:
   - make run
   - docker ps -a
   - make kill
+
