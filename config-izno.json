@@ -1,7 +1,7 @@
 {
   "root": "/solid/data",
   "port": "443",
-  "serverUri": "https://solid.down.izno.tech",
+  "serverUri": "https://solid.down.izno.tech:443",
   "auth": "oidc",
   "webid": true,
   "configPath": "./config",
@@ -11,5 +11,7 @@
   "mount": "/",
   "dbPath": "./.db",
   "multiuser": true,
-  "acceptCertificateHeader": true
+  "acceptCertificateHeader": true,
+  "useProxy": true,
+  "proxy": "/proxy"
 }
