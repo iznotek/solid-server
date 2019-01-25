@@ -12,5 +12,6 @@ RUN \
 # Copy default config
 COPY ./config.json .
 
+VOLUME /solid/data
 EXPOSE 8443
-ENTRYPOINT ["/usr/bin/solid", "start"]
+ENTRYPOINT ["/usr/bin/solid", "start", "--multiuser"]

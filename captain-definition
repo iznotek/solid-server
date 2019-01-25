@@ -1,0 +1,14 @@
+{
+  "schemaVersion" :1 ,
+  "dockerfileLines" :[
+                        "FROM mhart/alpine-node:8",
+                        "RUN npm update && npm install -g solid-server",
+                        "WORKDIR /solid",
+                        "RUN mkdir data && mkdir .db",
+                        "COPY ./src/config-izno.json .",
+                        "VOLUME /solid/data",
+                        "EXPOSE 8443",
+                        "ENTRYPOINT [\"/usr/bin/solid\", \"start\", \"--multiuser\"]"
+                    ]
+}
+

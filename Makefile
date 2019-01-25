@@ -36,6 +36,7 @@ run:
 	docker container run \
 		-d \
 		-p 8443:8443 \
+		-v $$(pwd)/data/:/solid/data/ \
 		--mount type=bind,source=$$(pwd)/key.pem,target=/solid/key.pem,readonly \
 		--mount type=bind,source=$$(pwd)/cert.pem,target=/solid/cert.pem,readonly \
 		--name ${repo}-${name}-dev \
