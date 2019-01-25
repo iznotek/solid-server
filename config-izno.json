@@ -1,26 +1,13 @@
 {
   "root": "/solid/data",
-
-  "port": "8443",
-  "serverUri": "https://solid.down.izno.tech:8443",
-
+  "port": "443",
+  "serverUri": "https://solid.down.izno.tech",
+  "auth": "oidc",
   "webid": true,
-
   "mount": "/",
-
-  "configPath": "./config",
-  "configFile": "./config.json",
-
   "dbPath": "./.db",
-
-  "sslKey": "/solid/key.pem",
-  "sslCert": "/solid/cert.pem",
-
-  "multiuser": false,
-
-  "server": {
-    "name": "solid.down.izno.tech",
-    "description": "",
-    "logo": ""
-  }
+  "multiuser": true,
+  "acceptCertificateHeader": true,
+  "useProxy": true,
+  "proxy": "/proxy"
 }
