@@ -5,7 +5,7 @@
   "auth": "oidc",
   "webid": true,
   "configPath": "./config",
-  "corsProxy": "/proxy",
+  "corsProxy": "./proxy",
   "sslKey": "/captain/letencrypt/etc/live/solid.down.izno.tech/privkey.pem",
   "sslCert": "/captain/letencrypt/etc/live/solid.down.izno.tech/fullchain.pem",
   "mount": "/",
