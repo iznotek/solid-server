@@ -11,5 +11,7 @@
   "mount": "/",
   "dbPath": "./.db",
   "multiuser": true,
-  "acceptCertificateHeader": true
+  "acceptCertificateHeader": true,
+  "useProxy": true,
+  "proxy": "/proxy"
 }
