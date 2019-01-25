@@ -1,7 +1,7 @@
 {
   "root": "/solid/data",
   "port": "443",
-  "serverUri": "https://solid.down.izno.tech:443",
+  "serverUri": "https://localhost:443",
   "auth": "oidc",
   "webid": true,
   "configPath": "./config",
