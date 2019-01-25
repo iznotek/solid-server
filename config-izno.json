@@ -11,6 +11,8 @@
   "dbPath": "./.db",
   "multiuser": true,
   "acceptCertificateHeader": true,
+  "no-reject-unauthorized": true,
+  "useCorsProxy": true,
   "corsProxy": "./config",
   "server": {
     "name": "solidown",
