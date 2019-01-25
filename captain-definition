@@ -7,8 +7,8 @@
                         "RUN mkdir data && mkdir .db",
                         "COPY ./src/config-izno.json .",
                         "VOLUME /solid/data",
-                        "EXPOSE 443",
-                        "ENTRYPOINT [\"/usr/bin/solid\", \"start\", \"--multiuser\"]"
+                        "EXPOSE 8443",
+                        "CMD [\"/usr/bin/solid\", \"start\", \"--multiuser\"]"
                     ]
 }
 
